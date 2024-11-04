@@ -21,3 +21,14 @@ const students = [
 
 // Recupera i dati dello studente con id 2
 // Risultato: { id: 2, name: 'Mario Banfi', age: 34, class: '4A' }
+
+// students.forEach((student) => {
+//   if (student.id === 2) {
+//     console.log(student)
+//   }
+// })
+
+const idToFind = 2
+const found = students.find((student) => student.id === idToFind);
+
+console.log(found)
